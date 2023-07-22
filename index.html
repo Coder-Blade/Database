@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #enterDetails {
+            float: left;
+            width: 45%;
+            background-color: #a176e9;
+            color: black;
+            border-radius: 10px;
+        }
+
+        #findDetails {
+            float: right;
+            width: 45%;
+            height: 445px;
+            background-color: #a176e9;
+            color: black;
+            border-radius: 10px;
+            
+        }
+
+        input {
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="enterDetails">
+        <h1>Enter details</h1>
+
+
+        <h4>Class</h4>
+        <select id="enterClass">
+            <option value="9thA">9thA</option>
+            <option value="9thB">9thB</option>
+            <option value="9thC">9thC</option>
+            <option value="9thD">9thD</option>
+            <option value="10thA">10thA</option>
+            <option value="10thB">10thB</option>
+            <option value="10thC">10thC</option>
+            <option value="10thD">10thD</option>
+            <option value="10thE">10thE</option>
+            <option value="10thF">10thF</option>
+            <option value="11thA">11thA</option>
+            <option value="11thB">11thB</option>
+            <option value="11thC">11thC</option>
+            <option value="11thD">11thD</option>
+        </select>
+        <h4>Student ID</h4>
+        <input id="enterID" type="text">
+
+        <h4>Name</h4>
+        <input id="enterName" type="text">
+
+        <h4>Roll no</h4>
+        <input id="enterRoll" type="number"> <br><br>
+
+        <button id="insert" onClick="window.location.reload();">Add</button>
+        <button id="update">UPDATE</button>
+        <button id="remove">REMOVE</button> <br><br>
+    </div>
+
+    <div id="findDetails">
+        <h1>Find by Student ID</h1>
+        <h4>Class</h4>
+        <select id="findClass">
+            <option value="9thA">9thA</option>
+            <option value="9thB">9thB</option>
+            <option value="9thC">9thC</option>
+            <option value="9thD">9thD</option>
+            <option value="10thA">10thA</option>
+            <option value="10thB">10thB</option>
+            <option value="10thC">10thC</option>
+            <option value="10thD">10thD</option>
+            <option value="10thE">10thE</option>
+            <option value="10thF">10thF</option>
+            <option value="11thA">11thA</option>
+            <option value="11thB">11thB</option>
+            <option value="11thC">11thC</option>
+            <option value="11thD">11thD</option>
+        </select>
+        <h4>Student ID</h4>
+        <input id="findID" type="text"> <br><br>
+        <button id="find" >FIND</button>
+        <h3 id="StudentID" type="number"></h3> 
+        <h3 id="findName" type="text"></h3>
+        <h3 id="findRoll" type="number"></h3> <br><br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
